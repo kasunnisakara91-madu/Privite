@@ -16,7 +16,7 @@ const ffmpeg = require('fluent-ffmpeg');
 const ffmpegInstaller = require('@ffmpeg-installer/ffmpeg');
 
 const {
-  default: makeWASocket,
+default: makeWASocket,
   useMultiFileAuthState,
   delay,
   getContentType,
@@ -24,6 +24,8 @@ const {
   Browsers,
   jidNormalizedUser,
   downloadContentFromMessage,
+  generateWAMessageFromContent,
+  proto,
   DisconnectReason
 } = require('baileys');
 
