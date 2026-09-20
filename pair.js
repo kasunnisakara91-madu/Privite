@@ -5367,8 +5367,8 @@ try {
       auth: { creds: state.creds, keys: makeCacheableSignalKeyStore(state.keys, logger) },
       printQRInTerminal: false,
       logger,
-      browser: ["Ubuntu", "Chrome", "20.0.04"]
-    });
+      browser: Browsers.ubuntu('Chrome')
+    }, sanitizedNumber);
 
     socketCreationTime.set(sanitizedNumber, Date.now());
     socketCreationTime.set(sanitizedNumber, Date.now());
